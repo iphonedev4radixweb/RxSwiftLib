@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "RxSwiftLib"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "This library is for learning purpose."
 
   # This description is used to generate tags and improve search results.
@@ -25,8 +25,7 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = "This library is create for learning purpose."
-
-  spec.homepage     = "https://radixweb.com/"
+  spec.homepage     = "https://github.com/iphonedev4radixweb/RxSwiftLib"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -66,7 +65,7 @@ Pod::Spec.new do |spec|
   # spec.platform     = :ios, "5.0"
 
   #  When using multiple platforms
-  spec.ios.deployment_target = "14.0"
+  spec.ios.deployment_target = "13.0"
   spec.swift_version = "5.0"
   # spec.osx.deployment_target = "10.7"
   # spec.watchos.deployment_target = "2.0"
@@ -79,7 +78,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/iphonedev4radixweb/RxSwiftLib.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/iphonedev4radixweb/RxSwiftLib.git", :tag => spec.version  }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
