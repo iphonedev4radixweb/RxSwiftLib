@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import RxSwiftLib
 
 class ViewController: UIViewController {
 
@@ -15,5 +16,13 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func openView(sender: UIButton)
+    {
+        let storyboardBundle = Bundle(for: SampleViewController.self)
+        let storyboard = UIStoryboard(name: "MainFramework", bundle: storyboardBundle)
+        let vc = storyboard.instantiateViewController(withIdentifier: "SampleViewController") as! SampleViewController
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: true)
+    }
 }
 

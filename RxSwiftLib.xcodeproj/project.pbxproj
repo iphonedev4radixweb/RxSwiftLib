@@ -14,7 +14,35 @@
 		F162501F2641154500176E3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F162501D2641154500176E3E /* Main.storyboard */; };
 		F16250212641154600176E3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F16250202641154600176E3E /* Assets.xcassets */; };
 		F16250242641154600176E3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F16250222641154600176E3E /* LaunchScreen.storyboard */; };
+		F162502D2641190000176E3E /* MainFramework.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F162502C2641190000176E3E /* MainFramework.storyboard */; };
+		F162503526411A7700176E3E /* SampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F162503426411A7700176E3E /* SampleViewController.swift */; };
+		F162504326411B7500176E3E /* RxSwiftLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F16250052641148200176E3E /* RxSwiftLib.framework */; };
+		F162504426411B7500176E3E /* RxSwiftLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F16250052641148200176E3E /* RxSwiftLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F162504526411B7500176E3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1624FFC2641148200176E3E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F16250042641148200176E3E;
+			remoteInfo = RxSwiftLib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F162504726411B7500176E3E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F162504426411B7500176E3E /* RxSwiftLib.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F16250052641148200176E3E /* RxSwiftLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxSwiftLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -28,6 +56,8 @@
 		F16250202641154600176E3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F16250232641154600176E3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F16250252641154600176E3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F162502C2641190000176E3E /* MainFramework.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainFramework.storyboard; sourceTree = "<group>"; };
+		F162503426411A7700176E3E /* SampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F162504326411B7500176E3E /* RxSwiftLib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +85,7 @@
 				F16250072641148200176E3E /* RxSwiftLib */,
 				F16250162641154500176E3E /* RxSwiftLibExample */,
 				F16250062641148200176E3E /* Products */,
+				F162503A26411B0400176E3E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +103,8 @@
 			children = (
 				F16250082641148200176E3E /* RxSwiftLib.h */,
 				F16250092641148200176E3E /* Info.plist */,
+				F162502C2641190000176E3E /* MainFramework.storyboard */,
+				F162503426411A7700176E3E /* SampleViewController.swift */,
 			);
 			path = RxSwiftLib;
 			sourceTree = "<group>";
@@ -87,6 +121,13 @@
 				F16250252641154600176E3E /* Info.plist */,
 			);
 			path = RxSwiftLibExample;
+			sourceTree = "<group>";
+		};
+		F162503A26411B0400176E3E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,10 +169,12 @@
 				F16250112641154500176E3E /* Sources */,
 				F16250122641154500176E3E /* Frameworks */,
 				F16250132641154500176E3E /* Resources */,
+				F162504726411B7500176E3E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F162504626411B7500176E3E /* PBXTargetDependency */,
 			);
 			name = RxSwiftLibExample;
 			productName = RxSwiftLibExample;
@@ -149,6 +192,7 @@
 				TargetAttributes = {
 					F16250042641148200176E3E = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 					F16250142641154500176E3E = {
 						CreatedOnToolsVersion = 12.4;
@@ -179,6 +223,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F162502D2641190000176E3E /* MainFramework.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,6 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F162503526411A7700176E3E /* SampleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,6 +259,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F162504626411B7500176E3E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F16250042641148200176E3E /* RxSwiftLib */;
+			targetProxy = F162504526411B7500176E3E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F162501D2641154500176E3E /* Main.storyboard */ = {
@@ -359,6 +413,7 @@
 		F162500E2641148200176E3E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 37F458EV6Y;
@@ -375,6 +430,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = radixweb.RxSwiftLib;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -383,6 +439,7 @@
 		F162500F2641148200176E3E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 37F458EV6Y;
